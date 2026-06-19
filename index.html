@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResumeAI - AI Resume Feedback Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="#home" aria-label="ResumeAI home">
+        <span class="logo-mark">R</span>
+        <span class="logo-text">Resume<b>X</b>pert</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge">AI Resume Feedback Tool</span>
+          <h1>AI-Powered Resume Analysis</h1>
+          <p>
+            ResumeXpert leverages artificial intelligence to analyze resumes,provide ATS compatibility scores,identify skill gaps and deliver personalized recommendations.Our goal is to help student and job seekers create stronger resumes and increase their chances of landling interviews.
+          </p>
+          <div class="hero-points">
+            <span><b>ATS Optimization</b> </span>
+            <span><b>Skill Gap Detection</b> </span>
+            <span><b>Recruiter Insights</b></span>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="mini-card">
+            <h2>Quick Review</h2>
+            <p>Get detailed ATS insights, skill-gap analysis, and improvement recommendations in seconds.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">Features</span>
+          <h2>Simple tools for a fast resume check</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Smart Resume Analysis</h3>
+            <p>Use the large text box to paste your full resume content.</p>
+          </article>
+          <article class="feature-card">
+            <h3>ATS Compatibility Score</h3>
+            <p>See how resume-friendly your content looks for applicant tracking systems.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Personalized Recommendations</h3>
+            <p>Find missing skills, weak points and practical suggestions to improve your resume.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section resume-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">Resume Review</span>
+          <h2>Paste your resume and analyze it</h2>
+        </div>
+
+        <div class="review-card">
+          <label for="resumeInput">Resume Content</label>
+          <textarea id="resumeInput" placeholder="Paste your resume here... Include your skills, education, projects, internships and achievements."></textarea>
+          <div class="actions">
+            <button id="analyzeBtn">Analyze Resume</button>
+            <p id="statusText" class="status-text" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section results-section" id="resultsSection">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">Results</span>
+          <h2>Your AI feedback will appear below</h2>
+        </div>
+
+        <div class="result-grid">
+          <article class="result-card score-card">
+            <h3>ATS Score</h3>
+            <div class="score-circle">
+              <span id="atsScore">--</span>
+              <small>/100</small>
+            </div>
+          </article>
+
+          <article class="result-card">
+            <h3>Strengths:</h3>
+            <ul id="strengthsList" class="result-list"></ul>
+          </article>
+
+          <article class="result-card">
+            <h3>Weaknesses:</h3>
+            <ul id="weaknessesList" class="result-list"></ul>
+          </article>
+
+          <article class="result-card">
+            <h3>Missing Skills:</h3>
+            <ul id="missingSkillsList" class="result-list"></ul>
+          </article>
+        </div>
+
+        <article class="suggestion-card">
+          <h3>Suggestions:</h3>
+          <p id="suggestionsText">Your detailed AI feedback will show here after analysis.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-card">
+        <div>
+          <span class="section-label">About</span>
+          <h2>Built for a college hackathon</h2>
+        </div>
+        <p>
+          ResumeIQ is a simple frontend project made with HTML, CSS, vanilla JavaScript and the Google Gemini API.
+          It is designed to feel realistic, clean and easy for students to understand.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>GitsetCode Hackathon 2026 &#10084;</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
