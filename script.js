@@ -1,6 +1,6 @@
 // Paste your Gemini API key below.
 // Keep in mind this is a frontend-only hackathon project, so the key will be visible in the browser.
-const GEMINI_API_KEY="AQ.Ab8RN6KF1XfheBo6stRPimrzjfj_cn08tceI40xxsVlBQzzE8g";
+const GEMINI_API_KEY="Generate API Key";
 const GEMINI_MODELS = ["gemini-2.5-flash", "gemini-3.5-flash", "gemini-2.5-flash-lite"];
 
 const resumeInput = document.getElementById("resumeInput");
